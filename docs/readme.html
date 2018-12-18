@@ -1,0 +1,55 @@
+<h1>Implementation of the methods described in the paper entitled &ldquo;Multi-task deep learning for satellite image pansharpening and segmentation&rdquo;</h1>
+
+<h2>Citation</h2>
+Bibtex file to cite this work is <a href='bibtex.bib'>here</a>
+
+<h2>Multi-task Framework Architecture</h2>
+
+<p><img width='1024' src="figures/framework.png" alt="The multi-task framework architecture" /></p>
+
+<hr/>
+
+<h2>Software Architecture</h2>
+
+<ul>
+<img src="figures/software_architecture.png" alt="software architecture" /></li>
+</ul>
+
+<hr/>
+
+
+<h2>Dependencies</h2>
+
+<ul>
+<li>The codes have been developed using the following dependencies:</li>
+<li>Python 3.6.4</li>
+<li>Tensorflow 1.10.0</li>
+<li>Numpy 1.14.2</li>
+<li>GDAL 2.2.4</li>
+<li>The codes have been tested on Fedora 25</li>
+<li>Visualization (Optional)</li>
+    <ul>
+        <li>Since the codes generate a binary map for each class, visualization of the outputs may not be easy as the outputs may contain more than three channels depending on how many classes have been taught to the network. We recommend to use Qgis, where the outputs can easily be displayed channel by channel.</li>
+    </ul>
+</ul>
+
+<hr/>
+
+<h2>Usage</h2>
+
+<ul>
+<li>The solver sub-directories, namely <strong>training_solvers</strong> and <strong>test_solvers</strong> contain solvers, which train a model and test the trained model (See the figure under <strong>Software Architecture</strong> section).</li>
+<li>To train a model, enter the following command (we assume that you are under <strong>multi-task</strong> directory, otherwise you will get an error):</li>
+<li><strong>python3 train_solvers/train_solver&lt;id>.py</strong></li>
+<li>To test a trained model, enter this command:</li>
+<li><strong>python3 test_solvers/test_solver&lt;id>.py</strong></li>
+<li><strong>&lt;id></strong> in the commands above determines which solver to run.</li>
+</ul>
+
+<hr/>
+
+<h2>Example Visual Results From the World-View3 Dataset</h2>
+
+<p>Here, we illustrate several original visual outputs from the World-View3 dataset for different methods including our multi-task framework.</p>
+
+<img width='1024' src="figures/results.png" alt="Multi-task learning results" />

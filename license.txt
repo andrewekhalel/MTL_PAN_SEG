@@ -1,0 +1,10 @@
+PROPERTY OF INRIA - TITANE team
+
+Authors: Andrew Khalel, Onur Tasar, Yuliya Tarabalka
+Work done in collaboration with Guillaume Charpiat, TAO team, Inria Saclay
+
+SHARED FOR ONLY EVALUATION NON-COMMERCIAL PURPOSES
+DISTRIBUTION OF THE CODE AND ITS RESULTS ARE PROHIBITED
+
+TO USE IT FOR COMMERCIAL PURPOSE OR FOR DISSEMINATION OF RESULTS - contact andrew.khalel@inria.fr, onur.tasar@inria.fr and yuliya.tarabalka@inria.fr
+
